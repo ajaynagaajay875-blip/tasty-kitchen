@@ -1,0 +1,142 @@
+.all-restaurants-section {
+  width: 100%;
+  padding: 10px 0 30px;
+}
+
+.restaurants-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.restaurant-item-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.restaurant-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+.restaurant-card-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.restaurant-details {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.restaurant-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 6px;
+}
+
+.restaurant-cuisine {
+  font-size: 14px;
+  color: #64748b;
+  margin: 0 0 10px;
+}
+
+.restaurant-rating-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.star-icon {
+  color: #f7931e;
+  font-size: 14px;
+}
+
+.rating-number {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.rating-reviews {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.restaurant-cost {
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  margin: auto 0 0;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.pagination-btn {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.pagination-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pagination-btn:not(:disabled):hover {
+  color: #f7931e;
+  transform: scale(1.08);
+}
+
+.pagination-icon {
+  font-size: 32px;
+}
+
+.page-number-display {
+  font-size: 15px;
+  font-weight: 700;
+  color: #334155;
+}
+
+@media (max-width: 960px) {
+  .restaurants-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .restaurants-list {
+    grid-template-columns: 1fr;
+  }
+}

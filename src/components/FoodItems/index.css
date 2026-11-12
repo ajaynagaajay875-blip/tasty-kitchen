@@ -1,0 +1,119 @@
+.food-item-card {
+  display: flex;
+  gap: 18px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #ffffff;
+  list-style: none;
+}
+
+.food-item-img {
+  width: 130px;
+  height: 110px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.food-item-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.food-item-name {
+  margin: 0 0 4px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.food-item-cost {
+  margin: 0;
+  font-weight: 600;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 15px;
+}
+
+.food-rupee-icon {
+  font-size: 13px;
+}
+
+.food-item-rating {
+  margin: 4px 0 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.food-star-icon {
+  color: #f7931e;
+}
+
+.food-add-btn {
+  align-self: flex-start;
+  background-color: transparent;
+  color: #f7931e;
+  border: 1.5px solid #f7931e;
+  border-radius: 6px;
+  padding: 5px 18px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.food-add-btn:hover {
+  background-color: #f7931e;
+  color: #ffffff;
+}
+
+.food-quantity-control {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: flex-start;
+}
+
+.food-qty-btn {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #cbd5e1;
+  background: white;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  color: #334155;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.food-qty-btn:hover {
+  background: #f1f5f9;
+}
+
+.food-active-count {
+  font-weight: 600;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+@media (max-width: 600px) {
+  .food-item-card {
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .food-item-img {
+    width: 100px;
+    height: 90px;
+  }
+}

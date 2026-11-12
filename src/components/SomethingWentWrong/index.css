@@ -1,0 +1,45 @@
+.something-went-wrong-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 20px;
+  min-height: 400px;
+}
+
+.failure-image {
+  width: 320px;
+  max-width: 80%;
+  margin-bottom: 20px;
+}
+
+.failure-heading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 10px;
+}
+
+.failure-desc {
+  font-size: 15px;
+  color: #64748b;
+  margin: 0 0 24px;
+  max-width: 450px;
+}
+
+.retry-btn {
+  background: #f7931e;
+  border: 0;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.retry-btn:hover {
+  background: #e07f10;
+}
