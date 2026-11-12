@@ -2,6 +2,10 @@
 
 A React.js web application built to help reduce restaurant food waste. Along with browsing restaurants and ordering food, users can buy extra/leftover food at low prices, NGOs can claim free bulk meals, and restaurants can post extra food before closing time.
 
+## Live Demo
+- **Deployed App:** [https://tasty-kitchens-umber.vercel.app](https://tasty-kitchens-umber.vercel.app/login)
+- **Demo Login:** Username `rahul` | Password `rahul@2021`
+
 ## Problem It Solves
 Many restaurants and caterers have leftover fresh food at the end of the day that often gets thrown away, while students and needy people look for affordable or free meals. This project connects kitchens with people and NGOs so extra food is saved instead of wasted.
 
